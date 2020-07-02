@@ -1,0 +1,117 @@
+<div class="souzy">
+    <span class="box__link">Copyright © 2020 </span><a class="box__link" href="https://www.helium.lk/">Helium Solutions </a>
+              <span class="box__link">All Rights Reserved.</span>
+                  
+          </div>
+  
+  <style>
+      .souzy {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      align-items: center;
+      background-color: rgb(0, 0, 0);
+      font-family: 'Montserrat', sans-serif;
+  }
+  
+  footer .logo {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 2rem;
+  }
+  
+  .box {
+      position: relative;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      width: 50px;
+      border-radius: 8vmin;
+      /* background-color: transparent; */
+      -webkit-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+      cursor: pointer;
+  }
+  
+  .box:hover {
+      position: relative;
+      width: calc(300px + 50px);
+      background-color: white;
+      cursor: default;
+  }
+  
+  .box:hover .box__group {
+      position: relative;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+  }
+  
+  .box:hover::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 110%;
+      width: 101%;
+      box-sizing: border-box;
+      right: 350px;
+      z-index: -1;
+  }
+  
+  .box__copy {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 4rem;
+      margin-left: 2px;
+  }
+  
+  .box__group {
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      justify-content: flex-end;
+      opacity: 0;
+      -webkit-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+      -webkit-transform: translateX(290px);
+      transform: translateX(290px);
+  }
+  
+  .box__group hr {
+      width: 3px;
+      height: 30px;
+      background-color: rgb(255, 255, 255);
+      border: none;
+      margin: 0 15px;
+  }
+  
+  .box__date {
+      font-size: 1.5rem;
+      margin-left: 15px;
+      color: #000;
+  }
+  
+  .box__link {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: .7rem;
+      color: rgb(255, 255, 255);
+      letter-spacing: 1px;
+  }
+  </style>
